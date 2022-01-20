@@ -1,0 +1,53 @@
+table{background-color:#12459f /* blue*/;
+font-size: 20px;
+font-family: "Lucida Console", "Courier New", monospace;
+border-radius: 8px;
+margin-left: auto;
+margin-right: auto;}
+td{padding: 10px;
+text-align: center;}
+.underlined{border-bottom:3px solid orange;}
+body{color: #d9d9d9; /* white*/
+}
+#next{border-radius: 8px;
+background-color: #12459f; /* blue*/
+font-family: "Lucida Console", "Courier New", monospace;
+text-align: center;
+color: #d9d9d9;
+font-size: 20px;
+padding: 10px;
+margin: 30px 12px;
+position: absolute;
+top: 70%;
+left: 50%;
+border: none;}
+#next:hover{transform: scale(1.15);
+background-color: #d9d9d9;
+color: #12459f;
+border: 2px solid #12459f;
+transition-duration: 0.5s;}
+#Login{border-radius: 8px;
+background-color: #12459f; /* blue*/
+font-family: "Lucida Console", "Courier New", monospace;
+text-align: center;
+color: #d9d9d9;
+font-size: 20px;
+padding: 10px;
+margin: 0;
+position: absolute;
+top: 5%;
+left: 93%;
+border: none;}
+#Login:hover{transform: scale(1.15);
+background-color: #d9d9d9;
+color: #12459f;
+border: 2px solid #12459f;
+transition-duration: 0.5s;}
+.Radio_Plan{border-radius: 30px;
+height: 30px;
+width: 30px;}
+.Radio_Plan:hover{
+opacity: 0.5;}
+#home_img{border-radius:8px;}
+/*#home_img:hover{border: 3px solid #12459f;}*/
+.overlined{border-top: 3px solid #d9d9d9;}
