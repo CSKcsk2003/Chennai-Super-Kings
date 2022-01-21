@@ -1,0 +1,136 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+}
+/* 
+header {
+	position: sticky;
+	z-index: 10;
+	top: 0px;
+	background-color: rgb(253, 236, 0);
+	padding: 13px;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	background-color: blue;
+}
+ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 30px;
+}
+
+li {
+	font-family: "Bebas Neue", cursive;
+	font-size: 34px;
+	list-style: none;
+	padding: 2px 14px;
+}
+
+li a {
+    display: block;
+	background-color: yellow;
+	color: black;
+	text-decoration: none;
+	border: 3px solid rgb(255, 0, 0);
+	font-family: "Barlow", sans-serif;
+	font-size: 21px;
+	border-radius: 15px;
+	padding: 11px;
+}
+li a:hover {
+	background-color: red;
+	transform: scale(1.2);
+}
+
+.login {
+	margin-left: auto;
+	margin-right: 20px;
+}
+
+.login a {
+	border: 3px rgb(255, 38, 0) solid;
+	color: black;
+	text-decoration: none;
+    display: block;
+    padding: 0px 10px;
+	background-color: rgb(72, 255, 0);
+	font-family: cursive;
+	font-size: 25px;
+}
+.login a:hover {
+	background-color: rgb(0, 255, 234);
+	transform: scale(1.2);
+}
+.logo{
+    height: 80px;
+}
+
+.logo img {
+	height: 100%;
+	width: 130px;
+} */
+#box{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.shopItem {
+	font-family: sans-serif;
+	background: #ffffff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* flex-wrap: wrap; */
+	padding: 10px;
+	overflow: hidden;
+}
+.shopItem img {
+	height: 40%;
+	width: auto;
+}
+.shopItem .itemName {
+	height: 15%;
+	overflow: hidden;
+}
+.shopItem .rating {
+	font-size: 20px;
+}
+.shopItem .price {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.shopItem .price .current {
+	font-size: 25px;
+	margin-right: 10px;
+}
+.shopItem .price .real {
+	text-decoration: line-through;
+}
+.shopItem .disc {
+	overflow-y: scroll;
+	height: 20%;
+	font-size: 1.2rem;
+}
+.shopItem .options {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 10px 0;
+	gap: 20px;
+}
+.shopItem button {
+	margin: 0;
+}
+h3{
+	font-size: 1.9rem;
+}

@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	font-size: 62.5%;
+}
+
+body {
+	width: 100%;
+}
+
+/* header {
+	position: sticky;
+	z-index: 10;
+	top: 0px;
+	background-color: rgb(253, 236, 0);
+	padding: 1.3rem;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	background-color: blue;
+}
+
+.navList {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 3rem;
+}
+.checkbtn{
+	font-size: 3rem;
+	color: white;
+	float: right;
+	line-height: 8rem;
+	margin-right: 4rem;
+	padding: 10px;
+	z-index: 101;
+	cursor: pointer;
+	display: none;
+}
+#check{
+	display: none;
+}
+@media (max-width: 952px){
+	label.logo{
+		padding-left: 5rem;
+	}
+	nav ul li a{
+		font-size: 1.8rem;
+	}
+}
+@media 
+	(max-width: 858px){
+		.checkbtn{
+			display: block;
+		}
+		.navList{
+			z-index: 100;
+			position: fixed;
+			flex-direction: column;
+			width: 100vw;
+			height: 100vh;
+			background: #2c3e50;
+			top: 0;
+			left: 0;
+			margin:0;
+			padding-top: 80px;
+			text-align: center;
+			transform: translateX(-100%);
+			transition: transform .5s;
+		}
+		nav .navList li{
+			width: 100%;
+			display: block;
+			margin: 50px 0;
+			line-height: 30px;
+		}
+		nav .navList li a{
+			font-size: 20px;
+			color: #0082e6;
+		}
+		#check:checked ~ .navList{
+			transform: translateX(0);
+		}
+	}
+
+	
+
+	
+
+li {
+	font-family: "Bebas Neue", cursive;
+	font-size: 3.4rem;
+	list-style: none;
+	padding: 0.2rem 1.4rem;
+}
+
+li a {
+    display: block;
+	background-color: yellow;
+	color: black;
+	text-decoration: none;
+	border: 3px solid rgb(255, 0, 0);
+	font-family: "Barlow", sans-serif;
+	font-size: 2.1rem;
+	border-radius: 1.5rem;
+	padding: 1.1rem;
+}
+li a:hover {
+	background-color: red;
+	transform: scale(1.2);
+}
+
+.login {
+	margin-left: auto;
+	margin-right: 2.0rem;
+}
+
+.login a {
+	border: 3px rgb(255, 38, 0) solid;
+	color: black;
+	text-decoration: none;
+    display: block;
+    padding: 0px 1.0rem;
+	background-color: rgb(72, 255, 0);
+	font-family: cursive;
+	font-size: 2.5rem;
+}
+.login a:hover {
+	background-color: rgb(0, 255, 234);
+	transform: scale(1.2);
+}
+.logo{
+    height: 8.0rem;
+}
+
+.logo img {
+	height: 100%;
+	width: 13.0rem;
+} */
+#title {
+	font-size: 30px;
+	font-family: "Source Serif Pro" serif;
+	background: rgba(22, 28, 123, 0.29);
+	color: #b50b0b;
+}
+main {
+	background: palegreen;
+	width: 100%;
+}
+
+#slider {
+	overflow: hidden;
+}
+#slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 15s slider infinite;
+}
+#slider figure img {
+	float: left;
+	width: 20%;
+	height: 40.0rem;
+}
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -400%;
+	}
+}
+#box h1{
+	font-size: 3.2rem;
+	font-weight: bold;
+}
+#ad {
+	/* background-image: url(image/membership.jpg);
+	background-size: 100% 100%; */
+	/* height: 71.0rem; */
+	width: 100%;
+	font-weight: bolder;
+	position: relative;
+	padding: 10px 0;
+}
+#ad img{
+	width: 100%;
+}
+.MS {
+	position: absolute;
+	background-color: rgb(241, 245, 10);
+	border: 0.3rem solid rgb(255, 251, 0);
+	/* float: right;
+	margin: 8.5rem 58.5rem; */
+    padding: 1.0rem;
+	font-size: 4.3rem;
+	left:25%;
+	top:12% ;
+	font-family: "Offside", cursive;
+	animation: myMS 5s infinite;
+	cursor: pointer;
+    text-decoration: none;
+    color:black;
+}
+@media (max-width: 858px){
+	.MS{
+		font-size: 2.3rem;
+		left:15%;
+		top:8% ;
+	}
+}
+.MS:hover {
+	transform: scale(1.1);
+}
+
+@keyframes myMS {
+	0% {
+		background-color: red;
+	}
+	25% {
+		background-color: yellow;
+	}
+	50% {
+		background-color: green;
+	}
+	75% {
+		background-color: brown;
+	}
+	100% {
+		background-color: red;
+	}
+}
+#box {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin:auto;
+	overflow-x: auto;
+}
+
+.box {
+	margin: 0.3rem;
+	background-image: linear-gradient(to bottom right, orange, yellow);
+	height: 10.0rem;
+	width: 15.0rem;
+	border: 0.3rem rgb(113, 168, 10) solid;
+	height: 45.0rem;
+	width: 32.0rem;
+	/* width: max(32.0rem,100%); */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.box img {
+	height: 16.0rem;
+	width: 28.0rem;
+	margin: 2.5rem;
+}
+.box p {
+	font-size: 2.5rem;
+	font-family: "Source Serif Pro", serif;
+	color: rgb(132, 76, 245);
+    padding: 1.0rem 0.5rem;
+}
+.box a {
+	background-color: #96eed1;
+	border: 0.2rem solid #57e131;
+	font-size: 1.4rem;
+	font-family: "Source Serif Pro", serif;
+    text-decoration: none;
+    color:black;
+    padding:0.5rem 1.0rem;
+}
+hr {
+	height: 0rem;
+	width: 99.1%;
+	background-color: brown;
+	border: solid 0.3rem brown;
+}
+
+#last {
+	font-family: "Source Serif Pro", serif;
+	font-size: 2.5rem;
+	color: orange;
+	background: palegreen;
+	padding: 2.5rem 0rem;
+}
+
+.last {
+	border: 3px rgb(105, 221, 236);
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 0.3rem;
+}
+footer {
+	background-color: blue;
+	padding: 1.0rem;
+	color: whitesmoke;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.5rem;
+}
+p {
+	font-family: "Barlow", sans-serif;
+}
+.llast img {
+	height: 2.5rem;
+	width: 4.0rem;
+	padding: 0.4rem 0.7rem;
+}
+h5 {
+	font-size: 1.7rem;
+}
+footer a{
+    color: rgb(255, 0, 0);
+}
+
+
+
+
+
+
