@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	font-size: 62.5%;
+}
+
+body {
+	width: 100%;
+}
+
+header {
+	position: sticky;
+	z-index: 10;
+	top: 0px;
+	background-color: rgb(253, 236, 0);
+	padding: 1.3rem;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	background-color: blue;
+}
+
+.navList {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 3rem;
+}
+.checkbtn{
+	font-size: 3rem;
+	color: white;
+	float: right;
+	line-height: 8rem;
+	margin-right: 4rem;
+	padding: 10px;
+	z-index: 101;
+	cursor: pointer;
+	display: none;
+}
+#check{
+	display: none;
+}
+@media (max-width: 952px){
+	label.logo{
+		padding-left: 5rem;
+	}
+	nav ul li a{
+		font-size: 1.8rem;
+	}
+}
+@media 
+	(max-width: 858px){
+		.checkbtn{
+			display: block;
+		}
+		.navList{
+			z-index: 100;
+			position: fixed;
+			flex-direction: column;
+			width: 100vw;
+			height: 100vh;
+			background: #2c3e50;
+			top: 0;
+			left: 0;
+			margin:0;
+			padding-top: 80px;
+			text-align: center;
+			transform: translateX(-100%);
+			transition: transform .5s;
+		}
+		nav .navList li{
+			width: 100%;
+			display: block;
+			margin: 50px 0;
+			line-height: 30px;
+		}
+		nav .navList li a{
+			font-size: 20px;
+			color: #0082e6;
+		}
+		#check:checked ~ .navList{
+			transform: translateX(0);
+		}
+	}
+
+	
+
+#title {
+	font-size: 30px;
+	font-family: "Source Serif Pro" serif;
+	background: rgba(22, 28, 123, 0.29);
+	color: #b50b0b;
+}
+
+li {
+	font-family: "Bebas Neue", cursive;
+	font-size: 3.4rem;
+	list-style: none;
+	padding: 0.2rem 1.4rem;
+}
+
+li a {
+    display: block;
+	background-color: yellow;
+	color: black;
+	text-decoration: none;
+	border: 3px solid rgb(255, 0, 0);
+	font-family: "Barlow", sans-serif;
+	font-size: 2.1rem;
+	border-radius: 1.5rem;
+	padding: 1.1rem;
+}
+li a:hover {
+	background-color: red;
+	transform: scale(1.2);
+}
+
+.login {
+	margin-left: auto;
+	margin-right: 2.0rem;
+}
+
+.login a {
+	border: 3px rgb(255, 38, 0) solid;
+	color: black;
+	text-decoration: none;
+    display: block;
+    padding: 0px 1.0rem;
+	background-color: rgb(72, 255, 0);
+	font-family: cursive;
+	font-size: 2.5rem;
+}
+.login a:hover {
+	background-color: rgb(0, 255, 234);
+	transform: scale(1.2);
+}
+.logo{
+    height: 8.0rem;
+}
+
+.logo img {
+	height: 100%;
+	width: 13.0rem;
+}
