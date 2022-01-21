@@ -137,6 +137,7 @@ p{
 .two{
     display: flex;
     justify-content: center;
+	flex-wrap: wrap;	
     margin: .5rem .5rem;
     
 }
