@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="navbar.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSK-Art Work</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(51, 51, 177);
+            font-family: sans-serif;
+            font-size: 16px;
+        }
+
+        .main {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 50vh;
+        }
+        .main .submitted {
+            font-size: 3rem;
+            width: 100%;
+            cursor: default;
+            background-color: #c8c864;
+            padding: 20px;
+            color:#ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn"> <i class="fas fa-bars"></i> </label>
+            <div class="logo">
+                <img src="image/logo.png" alt="">
+            </div>
+            <ul class="navList">
+                <li><a href="index.html"><b> HOME </b></a></li>
+                <li><a href="shop.html"><b> SHOP </b></a></li>
+                <li><a href="team.html"><b> TEAM </b></a></li>
+                <li><a href="contact.html"><b> CONTACT US </b></a></li>
+            </ul>
+            <span class="login">
+                <a href="login.html" autofocus>Login</a>
+            </span>
+        </nav>
+    </header>
+    <section class="main">
+        <div class="submitted">
+            <p>Your artwork has been uploaded successfully. </p>
+        </div>
+    </section>
+</body>

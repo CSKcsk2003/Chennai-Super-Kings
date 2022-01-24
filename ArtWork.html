@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="ArtWork.css">
+    <link rel="stylesheet" href="navbar.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSK-Art Work</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn"> <i class="fas fa-bars"></i> </label>
+            <div class="logo">
+                <img src="image/logo.png" alt="">
+            </div>
+            <ul class="navList">
+                <li><a href="index.html"><b> HOME </b></a></li>
+                <li><a href="shop.html"><b> SHOP </b></a></li>
+                <li><a href="team.html"><b> TEAM </b></a></li>
+                <li><a href="contact.html"><b> CONTACT US </b></a></li>
+            </ul>
+            <span class="login">
+                <a href="login.html" autofocus>Login</a>
+            </span>
+        </nav>
+    </header>
+    <section class="main">
+        <div class="first">
+            <h1>
+                SUBMIT YOUR ART WORK
+            </h1>
+        </div>
+        <div class="form">
+            <div class="zero">
+                <p>
+                    Yellow Love is all we need!<br>
+                    Send your creatives here and get featured.
+                </p>
+            </div>
+            <span class="divider"></span>
+            <form class="formMain" action="artworkSubmited.html">
+                <div class="second">
+                    <div class="sec">
+                        <label>
+                            <div class="inputTitle">
+                                What's your name <span class="star">*</span>
+                            </div>
+                            <input type="text" placeholder="Please Enter Your name" required>
+                        </label>
+                    </div>
+                    <div class="ond">
+                        <label>
+                            <div class="inputTitle">Where are you from?</div>
+                            <input type="text" placeholder="Please Enter Your Location">
+                        </label>
+                    </div>
+                </div>
+                <div class="third">
+                    <label>
+                        <div class="inputTitle">About your art <span class="star">*</span></div>
+                        <textarea placeholder="Please write about your art" id="" required></textarea>
+                    </label>
+                </div>
+                <div class="fourth">
+                    <label>
+                        <div class="inputTitle">Upload your art Super Art <span class="star">*</span></div>
+                        <div class="fileInput">
+                            <span class="input">PNG,JPG,JPEG,GIF </span><span class="choose">Choose</span>
+                        </div>
+                        <input type="file" required onchange="document.querySelector('.fileInput .input').innerText=this.files[0].name;
+                        document.querySelector('.fileInput .choose').innerText='Uploaded'">
+                    </label>
+                </div>
+                <input type="submit" value="Submit" onclick="if(document.querySelector('.fourth input').files.length===0)alert('Please upload artwork first.')">
+            </form>
+        </div>
+
+    </section>
+</body>
+
+</html>

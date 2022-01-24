@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta
+	name="viewport"
+	content="width=device-width,
+			initial-scale=1.0"/>
+	<link rel="stylesheet" href="trans.css"
+		class="css" />
+        <title>Payment</title>
+</head>
+<body>
+	<div class="container">
+	<div class="main-content">
+		
+	</div>
+
+	<div class="centre-content">
+        <p class="text">PAYMENT GATEWAY</p>
+        <!-- <select class="form-select" aria-label="Default select example">
+            <option selected>Select Package </option>
+            <option value="1">1499 (Fan)</option>
+            <option value="2">2499 (Super Fan)</option>
+          </select> -->
+		<!-- <h1 class="price">2499<span>/-</span></h1> -->
+	</div>
+
+	<div class="last-content">
+		<button type="button" class="pay-now-btn" onclick="yourFunction()">
+		Apply Coupons
+		</button>
+		<!-- <button type="button" class="pay-now-btn">
+		Pay with Netbanking
+		</button> -->
+
+		<!-- <button type="button" class="pay-now-btn">
+		Netbanking options
+		</button> -->
+	</div>
+
+	<div class="card-details"> <form action="" method="post">
+		<p>Pay using Credit or Debit card</p>
+
+		<div class="card-number">
+		<label> Card Number </label>
+		<input
+			type="text"
+			class="card-number-field"
+			placeholder="###-###-###" required/>
+		</div>
+		<br />
+		<div class="date-number">
+		<label> Expiry Date </label>
+		<input type="text" class="date-number-field"
+				placeholder="DD-MM-YY" required />
+		</div>
+
+		<div class="cvv-number">
+		<label> CVV number </label>
+		<input type="text" class="cvv-number-field"
+				placeholder="xxx" required/>
+		</div>
+		<div class="nameholder-number">
+		<label> Card Holder name </label>
+		<input
+			type="text"
+			class="card-name-field"
+			placeholder="Enter your Name" required/>
+		</div>
+		<button type="submit"
+				class="submit-now-btn" onclick="myFunction()">
+		submit 
+		</button>
+    </form>
+	</div>
+	</div>
+    <script> function myFunction() {
+        alert("INVAILD CREDENTIALS")
+    }
+   function yourFunction()  {
+        prompt("Enter Coupon Code")
+}
+</script>
+</body>
+</html>
